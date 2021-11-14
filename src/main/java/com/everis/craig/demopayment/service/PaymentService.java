@@ -29,7 +29,7 @@ public class PaymentService extends BaseService<Payment, String> implements IPay
 
     @Override
     public Mono<Void> deleteByObtaining_Iban(String iban) {
-        return paymentRepository.deleteObtaining_Iban(iban);
+        return paymentRepository.deleteByObtaining_Iban(iban);
     }
 
     @Override
